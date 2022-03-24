@@ -25,8 +25,8 @@ Spacing (px)
 --- Colors ---
 Primary: #e67e22
 
-- Tints:
-- Shades:#fdf2e9
+- Tints:#fae5d3, #fdf2e9
+- Shades: #cf711f
 - Accents:
 - Greys: #555, #333
 
@@ -79,6 +79,9 @@ General Reusable Components
 }
 
 .heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
@@ -138,7 +141,8 @@ General Reusable Components
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
 }
 
 .grid--2-cols {
@@ -151,4 +155,8 @@ General Reusable Components
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
