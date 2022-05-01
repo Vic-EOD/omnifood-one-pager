@@ -1,6 +1,15 @@
+//set copyright text to current year
 const yearEL = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEL.textContent = currentYear;
+
+// Mobile navigation class toggle
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", () => {
+  headerEl.classList.toggle("nav-open");
+});
 
 function checkFlexGap() {
   const flex = document.createElement("div");
